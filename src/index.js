@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './styles/main.css';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './store';
+import { App } from './App';
+import "animate.css";
+import { BrowserRouter as Router } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// ..
+AOS.init();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+        <Router>
+      {/* <ChakraProvider> */}
+            <App />
+      {/* </ChakraProvider> */}
+        </Router>
+    </Provider>
   </React.StrictMode>
 );
 

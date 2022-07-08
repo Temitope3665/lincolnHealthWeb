@@ -1,10 +1,23 @@
-# Getting Started with Create React App
+# **PharmCare App**
+This is an application for a pharmacy company which allows customer to book an appointment with available doctor or nurses, purchase drugs online 
+and get it delivered to their doorstep while making provision for making payment on the platform. <br/>
+*`This application is built with React, Redux and tailwindCSS.`*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PharmCare Status
+This project is currently in development. Kindly watch out for more update.
+## Installation and Setup Instructions
 
-## Available Scripts
+Clone down this repository. You will need node and npm installed globally on your machine.
 
-In the project directory, you can run:
+## Installation: <br/>
+### `npm install`
+
+## To Run Test Suite: <br/>
+
+### `npm test`
+Launches the test runner in the interactive watch mode.
+
+## To Start Server: <br/>
 
 ### `npm start`
 
@@ -14,10 +27,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## To Visit App:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `localhost:3000`
+
+## Available Scripts
+
+In the project directory, you can run:
 
 ### `npm run build`
 
