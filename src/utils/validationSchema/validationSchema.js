@@ -1,5 +1,6 @@
 import * as yup from "yup";
 import YupPassword from 'yup-password';
+import { phoneNumberRegExp } from "../helpers/regex";
 
 YupPassword(yup);
 
@@ -27,5 +28,5 @@ export const ResetPasswordSchema = yup.object().shape({
 
 export const AppointmentSchema = yup.object().shape({
   name: yup.string().required(),
-  tel: yup.number().required()
+  tel: yup.string().matches(phoneNumberRegExp, 'Phone number is not valid').required(),
 });

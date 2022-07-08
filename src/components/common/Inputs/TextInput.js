@@ -4,12 +4,11 @@ import InputError from "./inputError";
 
 const TextInput = forwardRef(
   (
-    { type, placeholder, label, defaultValue, value, name, onChange, errors },
+    { type, placeholder, label, defaultValue, value, name, onChange, errors, pattern },
     ref
   ) => (
     <div className="mt-3">
       <label className="text-md font-medium">{label}</label>
-      {console.log(errors[name]?.message)}
       <input
         className={errors && errors[name] &&
           errors[name]?.type !== ''
@@ -24,6 +23,7 @@ const TextInput = forwardRef(
         name={name}
         onChange={onChange}
         ref={ref}
+        pattern={pattern}
       />
       {errors && errors[name] && <InputError text={errors[name]?.message} />}
     </div>
