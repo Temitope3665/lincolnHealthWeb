@@ -15,7 +15,6 @@ const TextInput = forwardRef(
             ? "p-4 rounded-md border-red border w-full mt-4 focus:outline-none"
             : "p-4 rounded-md border-lightBlue border w-full mt-4 focus:outline-none"
         }
-        // className={errors && errors[name] && "p-4 rounded-md border-lightBlue border w-full mt-4 focus:outline-none"}
         type={type}
         placeholder={placeholder}
         value={value}

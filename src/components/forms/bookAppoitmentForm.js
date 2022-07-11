@@ -7,8 +7,6 @@ import TextInput from "../common/Inputs/TextInput";
 const BookAppoitmentForm = () => {
   const [location, setLocation] = useState('');
   const [accept, setAccept] = useState(false);
-  console.log(accept)
-  console.log(location);
   const {
     register,
     handleSubmit,
@@ -68,7 +66,6 @@ const BookAppoitmentForm = () => {
         >
           Request Now
         </button>
-        {console.log(errors)}
       </div>
     </form>
   );
